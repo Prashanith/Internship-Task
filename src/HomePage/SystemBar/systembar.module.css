@@ -1,0 +1,48 @@
+.systemBar{
+    background-color: #F5F5F5;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 70px;
+}
+
+.logo{
+    color: black;
+    /* margin-left:50px; */
+}
+
+.menu{
+    /* margin-right: 60px; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.menu .item {
+    display: inline-block;
+  }
+  
+  .menu .item:not(:last-child):after {
+      padding-left: 7px;
+      padding-right: 7px;
+    content: "|";
+    }
+
+.item:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .systemBar{
+        display: none;
+    }
+  }
